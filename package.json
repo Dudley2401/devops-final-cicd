@@ -1,0 +1,29 @@
+{
+  "name": "devops-final-cicd",
+  "version": "1.0.0",
+  "description": "Proyecto final DevOps CI/CD con GitHub Actions, Docker, Docker Hub y Render.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "devops",
+    "ci-cd",
+    "github-actions",
+    "docker",
+    "render"
+  ],
+  "author": "Dudley Peter",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^7.0.0"
+  }
+}
