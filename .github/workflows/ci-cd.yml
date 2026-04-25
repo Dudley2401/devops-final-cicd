@@ -35,7 +35,3 @@ jobs:
 
       - name: Push Docker image to Docker Hub
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/devops-final-cicd:latest
-
-      - name: Deploy to Render
-        if: ${{ secrets.RENDER_DEPLOY_HOOK_URL != '' }}
-        run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
